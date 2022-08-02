@@ -2,13 +2,13 @@
   <html>
         <body>
             <script type="module">
-                var rooter = document.getElementById('root');
+                var rooter = document.createElement('div');
+                rooter.setAttribute('id', 'root')
+                document.body.appendChild(rooter);
                 var element = document.createElement('div');
                 var textnode = document.createTextNode("Hello World");
                 element.appendChild(textnode);
                 document.getElementById("root").appendChild(element);   
-                document.body.appendChild(rooter);
-                console.log(rooter)
             </script>
         </body>
     </html>
